@@ -16,6 +16,9 @@ deployment:
 tools_count: 1
 tools:
 - name: get_house_availability
-  description: ''
+  description: Check availability and pricing for a Le Collectionist property over a given period. Returns
+    whether the property is bookable online and its public price if available.
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
