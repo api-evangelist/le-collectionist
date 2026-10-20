@@ -1,0 +1,44 @@
+{
+  "endpoint": "https://api.lecollectionist.com/mcp",
+  "captured": "2026-10-20",
+  "method": "initialize + tools/list (anonymous, no tool called; roadmap#992)",
+  "protocol_version": "2024-11-05",
+  "server_info": {
+    "name": "le-collectionist-mcp",
+    "version": "1.0.0"
+  },
+  "result": {
+    "tools": [
+      {
+        "name": "get_house_availability",
+        "description": "Check availability and pricing for a Le Collectionist property over a given period. Returns whether the property is bookable online and its public price if available.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "house_name": {
+              "type": "string",
+              "description": "Name of the property (partial match accepted, case-insensitive)"
+            },
+            "check_in": {
+              "type": "string",
+              "description": "Check-in date (YYYY-MM-DD)"
+            },
+            "check_out": {
+              "type": "string",
+              "description": "Check-out date (YYYY-MM-DD)"
+            },
+            "currency": {
+              "type": "string",
+              "description": "Currency code (EUR, USD, GBP, CHF…). Defaults to EUR."
+            }
+          },
+          "required": [
+            "house_name",
+            "check_in",
+            "check_out"
+          ]
+        }
+      }
+    ]
+  }
+}
