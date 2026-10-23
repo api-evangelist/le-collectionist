@@ -5,8 +5,15 @@
       "source": "https://magazine.lecollectionist.com/fr",
       "feed_url": "https://magazine.lecollectionist.com/fr/rss.xml",
       "title": "",
-      "saved": 2,
+      "saved": 0,
       "method": "discovered"
+    },
+    {
+      "source": "https://magazine.lecollectionist.com/fr/rss.xml",
+      "feed_url": "https://magazine.lecollectionist.com/fr/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     },
     {
       "source": "https://lecollectionist.com/",
@@ -16,6 +23,6 @@
       "method": "none"
     }
   ],
-  "post_count": 2,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 11,
+  "fetched": "2026-10-17T14:53:57Z"
 }
